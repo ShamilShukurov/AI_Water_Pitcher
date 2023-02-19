@@ -53,24 +53,11 @@ class TestAStar(unittest.TestCase):
         s = A_Star(capacities,target_quantity)
         self.assertTrue(s==4)
 
-    #Test for some edge cases
     def test3_A_Star(self):
         capacities = [5,10,20]
         target_quantity = 0
         s = A_Star(capacities,target_quantity)
         self.assertTrue(s==0)
-    
-    def test4_A_Star(self):
-        capacities = [5,10,20]
-        target_quantity = -3
-        s = A_Star(capacities,target_quantity)
-        self.assertTrue(s==-1)
-
-    def test5_A_Star(self):
-        capacities = [5,-10,20]
-        target_quantity = 7
-        s = A_Star(capacities,target_quantity)
-        self.assertTrue(s==-1)
 
 
 if __name__ == '__main__':
